@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:hsl(0, 0%, 33%);
+}
+
+body{
+    text-align:center;
+}
+
+img{object-fit:cover;}
