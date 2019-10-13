@@ -68,15 +68,14 @@ header {
     border-radius: 50%;
 }
 
-.common__profile{
+.common__section{
     margin:80px auto 40px;
-    padding:70px 0 0;
     position:relative;
     width:100%;
     height:auto;
 }
 
-.profile__heading{
+.commonh__heading{
     text-align:left;
     display:block;
     padding-left:50px;
@@ -85,32 +84,30 @@ header {
     font-size:24px;
     line-height:20px;
 }
-.profile__heading__label1{
+.commonh__heading__label1{
     font-size:22px;
     font-weight:lighter;
 }
-.profile__heading__label1::before{
+.commonh__heading__label1::before{
     content: "";
     display: block;
     width: 30px;
     height: 1px;
-    background-color: #d4bf94;
+    background-color: #bdd4ff;
     position: absolute;
     left: 0;
     top: 10px;
 }
 
-.profile__heading__label1 span{
+.commonh__heading__label1 span{
     position:absolute;
     margin-left:20px;
     width: auto;
     font-size: 12px;
     letter-spacing: 3px;
     color: #848689;
-    top: -1px;
     display: inline-block;
     min-width: 24px;
-    vertical-align: baseline;
 }
 
 .profile__body{
