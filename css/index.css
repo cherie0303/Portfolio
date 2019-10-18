@@ -1,12 +1,10 @@
 @charset "utf-8";
 
-/*ヘッダー*/
 header {
     text-align: center;
     display: relative;
     width: 100%;
 }
-
 .parallax {
     background-image: url('../img/elly20160701005919.jpg');
     width: 100%;
@@ -22,8 +20,6 @@ header {
         background-attachment: scroll;
     }
 }
-
-
 .title1 {
     display: block;
     text-align: center;
@@ -33,7 +29,6 @@ header {
     top: 70px;
     width: 100%;
 }
-
 .title2 {
     display: block;
     text-align: center;
@@ -118,10 +113,6 @@ li {
     padding: 10px 40px;
     border: 1px solid aliceblue;
 }
-
-/*/ヘッダー*/
-
-/*ヘッダー以外の共通点*/
 .common__section {
     margin: 80px auto 40px;
     position: relative;
@@ -176,10 +167,6 @@ li {
     width: 100%;
     height: 200px;
 }
-
-/*/ヘッダー以外の共通点*/
-
-/*プロフィール*/
 [class^="profile__img"] {
     width: 100px;
     height: 100px;
@@ -202,10 +189,12 @@ li {
     text-align: center;
     line-height: 30px;
     border-radius: 20px;
+    width:80px;
 }
 
 .profile__item {
     white-space: nowrap;
+    width:80px;
 }
 
 .profile__text {
@@ -213,16 +202,12 @@ li {
 }
 
 .profile__img1 {
-    margin-right: 142px;
+    margin-right: 70px;
 }
 
 .profile__img2 {
     margin-left: 0px;
 }
-
-/*/プロフィール*/
-
-/*Strength強み*/
 .strength__round {
     border-radius: 50%;
     border: 1px solid;
@@ -251,10 +236,6 @@ li {
     top: 0px;
     margin-left: 10px;
 }
-
-/*/Strength強み　*/
-
-/*workflow*/
 [class^="workflow__"] {
     margin: 10px 0px;
 }
@@ -263,10 +244,28 @@ li {
     margin: 20px 0px;
 
 }
-
-/*/workflow*/
-
-/*フッター*/
+.skill__container{
+    background-color: #ddd;
+}
+.skillbar{
+    text-align:right;
+    padding:10px 0px;
+    color:white;
+}
+.skillbar__title{
+    text-align:left;
+}
+.html{
+    width:90%;
+    background-color:beige;
+}
+.css{
+    width:80%;
+    background-color:#f2f2f1;
+}
+.padding10{
+    padding-right:10px;
+}
 footer {
     height: 100vh;
     position: relative;
@@ -292,10 +291,6 @@ footer {
 .footer__contact{
     white-space: nowrap;
 }
-/*/フッター*/
-
-
-/*アニメーション*/
 .slideUp {
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
@@ -330,4 +325,3 @@ footer {
     }
 }
 
-/*/アニメーション*/
