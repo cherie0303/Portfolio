@@ -1,10 +1,10 @@
 @charset "utf-8";
-
 header {
     text-align: center;
     display: relative;
     width: 100%;
 }
+
 .parallax {
     background-image: url('../img/elly20160701005919.jpg');
     width: 100%;
@@ -20,6 +20,8 @@ header {
         background-attachment: scroll;
     }
 }
+
+
 .title1 {
     display: block;
     text-align: center;
@@ -29,6 +31,7 @@ header {
     top: 70px;
     width: 100%;
 }
+
 .title2 {
     display: block;
     text-align: center;
@@ -82,7 +85,9 @@ ul {
 li {
     margin: 10px;
 }
-
+.header__nav a{
+    color:white;
+}
 .header__outer {
     position: absolute;
     width: 100%;
@@ -112,6 +117,7 @@ li {
     display: inline-block;
     padding: 10px 40px;
     border: 1px solid aliceblue;
+    color:white;
 }
 .common__section {
     margin: 80px auto 40px;
@@ -189,12 +195,12 @@ li {
     text-align: center;
     line-height: 30px;
     border-radius: 20px;
-    width:80px;
+    width: 80px;
 }
 
 .profile__item {
     white-space: nowrap;
-    width:80px;
+    width: 80px;
 }
 
 .profile__text {
@@ -208,7 +214,7 @@ li {
 .profile__img2 {
     margin-left: 0px;
 }
-.strength__round {
+[class^="strength__round"] {
     border-radius: 50%;
     border: 1px solid;
     width: 50px;
@@ -218,6 +224,26 @@ li {
     margin-bottom: 20px;
 }
 
+.strength__round__1 {
+    border: 1px solid hsl(277, 36%, 51%);
+}
+
+.strength__round__2 {
+    border: 1px solid hsl(0, 39%, 56%);
+}
+
+.strength__round__3 {
+    border: 1px solid #568d65;
+}
+
+.strength__round__4 {
+    border: 1px solid #ff8f30;
+}
+
+.strength__round__5 {
+    border: 1px solid #9d996e;
+}
+
 .point__item {
     position: relative;
 }
@@ -225,7 +251,7 @@ li {
 .point__heading {
     position: absolute;
     top: 10px;
-    left: 7px;
+    left: 6px;
     text-align: center;
     font-size: 18px;
 }
@@ -233,9 +259,10 @@ li {
 .point__text {
     display: inline-block;
     position: absolute;
-    top: 0px;
+    line-height: 26px;
     margin-left: 10px;
 }
+
 [class^="workflow__"] {
     margin: 10px 0px;
 }
@@ -244,27 +271,85 @@ li {
     margin: 20px 0px;
 
 }
-.skill__container{
+.skill__container {
     background-color: #ddd;
 }
-.skillbar{
-    text-align:right;
-    padding:10px 0px;
-    color:white;
+
+.skillbar {
+    text-align: right;
+    padding: 10px 0px;
+    color: white;
 }
-.skillbar__title{
-    text-align:left;
+
+.skillbar__title {
+    text-align: left;
 }
-.html{
-    width:90%;
-    background-color:beige;
+
+.padding10 {
+    padding-right: 10px;
+    color: white;
 }
-.css{
-    width:80%;
-    background-color:#f2f2f1;
+
+.html {
+    width: 90%;
+    background-color: hsl(307, 100%, 87%);
 }
-.padding10{
-    padding-right:10px;
+
+.css {
+    width: 80%;
+    background-color: hsl(129, 65%, 58%);
+}
+
+.sass {
+    width: 60%;
+    background-color: hsl(182, 97%, 61%);
+    color: hsl(0, 0%, 33%);
+}
+
+.javascript {
+    width: 60%;
+    background-color: #ff8686;
+}
+
+.jquery {
+    width: 60%;
+    background-color: #ffff78;
+    color: hsl(0, 0%, 33%);
+}
+
+.php {
+    width: 50%;
+    background-color: #8790ff;
+}
+
+.python {
+    width: 30%;
+    background-color: #fa75ff;
+}
+
+.xd {
+    width: 80%;
+    background-color: hsl(16, 100%, 70%);
+}
+
+.git {
+    width: 30%;
+    background-color: #6f7896;
+}
+
+.seo {
+    width: 70%;
+    background-color: #b2ac68;
+}
+
+.mysql {
+    width: 50%;
+    background-color: #95b2ff;
+}
+
+.java {
+    width: 30%;
+    background-color: #cf55e5;
 }
 footer {
     height: 100vh;
@@ -276,20 +361,27 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align:center;
-}
-.footer__title h2{
-    color:white;
-}
-.footer__thank{
-    font-size:30px;
-}
-.footer__icon i{
-    color:white;
+    text-align: center;
 }
 
-.footer__contact{
+.footer__title h2 {
+    color: white;
+}
+
+.footer__thank {
+    font-size: 30px;
+}
+
+.footer__icon i {
+    color: white;
+}
+
+.footer__contact {
     white-space: nowrap;
+}
+.fab,.fas{
+    font-size:30px;
+    margin:0 5px
 }
 .slideUp {
     animation-name: slideUp;
@@ -324,4 +416,3 @@ footer {
         -webkit-transform: translateY(0%);
     }
 }
-
