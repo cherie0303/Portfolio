@@ -4,7 +4,8 @@ setTimeout(function () {
     showloading.style.display = 'none';
     contents.classList.remove('hidden');
 }, 2000);
-function openTab(evt, tabName) {var i, tabcontent, tablinks;
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
