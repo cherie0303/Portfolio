@@ -3,23 +3,19 @@ header {
     text-align: center;
     display: relative;
     width: 100%;
-}
-
-.parallax {
-    background-image: url('../img/elly20160701005919.jpg');
+}.eng {
+    font-family: 'Pinyon Script', cursive;
+}.parallax {
+    background-image: url('../img/firstview.jpg');
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-@media only screen and (max-device-width: 1366px) {
+}@media only screen and (max-device-width: 1366px) {
     .parallax {
-        background-attachment: scroll;
-    }
-}
+        background-attachment: scroll;   }}
 
 
 .title1 {
@@ -149,7 +145,7 @@ li {
     display: block;
     width: 30px;
     height: 1px;
-    background-color: #bdd4ff;
+    background-color: #9597FF;
     position: absolute;
     left: 0;
     top: 10px;
@@ -193,16 +189,20 @@ li {
 }
 
 .profile__label {
-    background-color: #ff9494;
+    background-color: #C0D3FB;
     text-align: center;
     line-height: 30px;
     border-radius: 20px;
     width: 80px;
 }
 
+.aa {
+    background-color: #C7C0FB;
+}
+
 .profile__item {
     white-space: nowrap;
-    width: 80px;
+    width: 100px;
 }
 
 .profile__text {
@@ -210,15 +210,13 @@ li {
 }
 
 .profile__img1 {
-    margin-right: 70px;
+    margin-right: 86px;
 }
 
 .profile__img2 {
     margin-left: 0px;
-}
-[class^="strength__round"] {
+}[class^="strength__round"] {
     border-radius: 50%;
-    border: 1px solid;
     width: 50px;
     height: 50px;
     position: relative;
@@ -226,24 +224,16 @@ li {
     margin-bottom: 20px;
 }
 
+.point__item__1 {
+    margin-top: 20px;
+}
+
 .strength__round__1 {
-    border: 1px solid hsl(277, 36%, 51%);
+    background-color: #C0D3FB;
 }
 
 .strength__round__2 {
-    border: 1px solid hsl(0, 39%, 56%);
-}
-
-.strength__round__3 {
-    border: 1px solid #568d65;
-}
-
-.strength__round__4 {
-    border: 1px solid #ff8f30;
-}
-
-.strength__round__5 {
-    border: 1px solid #9d996e;
+    background-color: #C7C0FB;
 }
 
 [class^="point__item"] {
@@ -252,8 +242,8 @@ li {
 
 .point__heading {
     position: absolute;
-    top: 10px;
-    left: 6px;
+    top: 11px;
+    left: 7px;
     text-align: center;
     font-size: 18px;
 }
@@ -263,7 +253,10 @@ li {
     position: absolute;
     line-height: 26px;
     margin-left: 10px;
+}.workflow__pc {
+    display: none;
 }
+
 [class^="workflow__"] {
     margin: 10px 0px;
 }
@@ -272,87 +265,108 @@ li {
     margin: 20px 0px;
 
 }
-.skill__container {
-    background-color: #ddd;
+
+.aaa {
+    display: none;
 }
 
-.skillbar {
-    text-align: right;
-    padding: 10px 0px;
-    color: white;
+/* Style the buttons inside the tab */
+.tab {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.tabcontent__inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.tablinks {
+    display: inline-block;
+    background-color: #C7C0FB;
+    padding: 10px 16px;
+    width: 40%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 10px;
+    height: 60px;
+    float: left;
+}
+
+#defaultOpen {
+    height: 60px;
+    padding-top: 7px;
+    margin-right: 20px;
+}
+.tablinks:hover {
+    background-color: #9597FF;
+}.tablinks.active {
+    background-color: #9597FF;
+}#skill {
+    padding-top: 20px;
+    background-image: url(../img/skill_sp.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.skill__bar {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 320px;
+}
+
+.skill__bar__piece {
+    transform: rotate(330deg);
+    opacity: 0.8;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(149, 151, 255, .6));
+    filter: drop-shadow(0px 0px 4px rgba(149, 151, 255, .6));
 }
 
 .skillbar__title {
-    text-align: left;
+    position: absolute;
+    top: 46px;
+    left: 30px;
+    color: #9597FF;
 }
 
-.padding10 {
-    padding-right: 10px;
-    color: white;
+.skill__bar__p {
+    width: 200px;
+    position: absolute;
+    top: 15px;
+    left: 120px;
 }
 
 .html {
-    width: 90%;
-    background-color: hsl(307, 100%, 87%);
+    left: 26px;
 }
 
 .css {
-    width: 80%;
-    background-color: hsl(129, 65%, 58%);
+    left: 34px;
 }
 
-.sass {
-    width: 60%;
-    background-color: hsl(182, 97%, 61%);
-    color: hsl(0, 0%, 33%);
-}
-
-.javascript {
-    width: 60%;
-    background-color: #ff8686;
-}
-
-.jquery {
-    width: 60%;
-    background-color: #ffff78;
-    color: hsl(0, 0%, 33%);
+.js {
+    left: 14px;
 }
 
 .php {
-    width: 50%;
-    background-color: #8790ff;
-}
-
-.python {
-    width: 30%;
-    background-color: #fa75ff;
+    left: 34px;
 }
 
 .xd {
-    width: 80%;
-    background-color: hsl(16, 100%, 70%);
+    left: 36px;
 }
 
-.git {
-    width: 30%;
-    background-color: #6f7896;
-}
-
-.seo {
-    width: 70%;
-    background-color: #b2ac68;
-}
-
-.mysql {
-    width: 50%;
-    background-color: #95b2ff;
-}
-
-.java {
-    width: 30%;
-    background-color: #cf55e5;
-}
-footer {
+[class^="pieceimages_"],
+[class*=" pieceimages_"] {
+    display: none;
+}footer {
     height: 100vh;
     position: relative;
 }
@@ -385,8 +399,7 @@ footer {
 .fas {
     font-size: 30px;
     margin: 0 5px
-}
-.slideUp {
+}.slideUp {
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
     animation-duration: 1s;
@@ -418,8 +431,7 @@ footer {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
-}
-@media screen and (min-width: 730px) {
+}@media screen and (min-width: 730px) {
     .profile__label {
         width: 200px;
     }
@@ -428,75 +440,305 @@ footer {
         white-space: nowrap;
         width: 120px;
     }
+
+    .profile__img1 {
+        margin-right: 224px
+    }
 }
+
 @media screen and (min-width: 1360px) {
-        .profile__img1 {
-        position:absolute;
-        left:100px;
-        top:30px;
-        width:250px;
-        height:250px;
+    .profile__img1 {
+        position: absolute;
+        left: 100px;
+        top: 30px;
+        width: 250px;
+        height: 250px;
     }
-    
-    .profile__img2{
-        position:absolute;
-        right:100px;
-        top:30px;
-        width:250px;
-        height:250px;
-    }
-}
-@media screen and (min-width: 529px) {
+
+    .profile__img2 {
+        position: absolute;
+        right: 100px;
+        top: 30px;
+        width: 250px;
+        height: 250px;}
+}@media screen and (min-width: 545px) {
     .point__text__4 {
         line-height: 52px;
     }
 }
 
-@media screen and (min-width: 609px) {
+@media screen and (min-width: 509px) {
     .point__text__3 {
         line-height: 52px;
     }
 }
 
-@media screen and (min-width: 611px) {
+@media screen and (min-width: 549px) {
     .point__text__2 {
         line-height: 52px;
     }
 }
 
-@media screen and (min-width: 749px) {
+@media screen and (min-width: 706px) {
     .point__text__5 {
         line-height: 52px;
     }
 }
 
-@media screen and (min-width: 829px) {
+@media screen and (min-width: 673px) {
     .point__text__1 {
         line-height: 52px;
     }
 }
-@media screen and (max-width: 465px) {
-    .point__item__1{
-        margin-bottom:20px;
+
+@media screen and (max-width: 388px) {
+    .point__item__1 {
+        margin-bottom: 20px;
     }
 }
-@media screen and (max-width: 355px) {
-    .point__item__2{
-        margin-bottom:20px;
+
+@media screen and (min-width: 950px) {
+    .res {
+        display: inline-block;
+        width: 40%;
+    }
+
+    #strength__body {
+        display: flex;
+        justify-content: center;
+    }
+
+    #strength__body img {
+        height: auto;
+        margin-right: 20px;
+        max-height: 350px;
+    }
+
+    .point__item__1,
+    .ki {
+        margin: 0;
+    }
+
+    [class^="point__text__"] {
+        line-height: 25px;
     }
 }
-@media screen and (max-width: 352px) {
-    .point__item__1{
-        margin-bottom:50px;
+
+@media screen and (min-width: 1202px) {
+    .point__text__3 {
+        line-height: 52px;
     }
 }
-@media screen and (max-width: 354px) {
-    .point__item__3{
-        margin-bottom:20px;
+
+@media screen and (min-width: 1300px) {
+    .point__text__4 {
+        line-height: 52px;
     }
 }
-@media screen and (max-width: 321px) {
-    .point__item__4{
-        margin-bottom:20px;
+
+@media screen and (min-width: 1306px) {
+    .point__text__2 {
+        line-height: 52px;
     }
 }
+
+@media screen and (min-width: 1500px) {
+    .point__text__1 {
+        line-height: 52px;
+    }
+}@media screen and (min-width: 1240px) {
+    #skill {
+        background-image: url(../img/skill.jpg);
+    }
+
+    .skill__bar {
+        position: relative;
+        margin: 0;
+        margin-bottom: 30px;
+        width: 400px;
+        left: 200px;
+    }
+
+    .skill__bar__piece {
+        transform: rotate(330deg);
+        opacity: 0.8;
+        -webkit-filter: drop-shadow(0px 0px 4px rgba(149, 151, 255, .6));
+        filter: drop-shadow(0px 0px 4px rgba(149, 151, 255, .6));
+    }
+
+
+    .skill__bar__p {
+        width: 280px;
+        position: absolute;
+        top: 15px;
+        left: 120px;
+    }
+
+    [class*=" pieceimages"] {
+        display: inline-block;
+        position: absolute;
+        animation: rotate-anime 3s linear infinite;
+    }
+
+    .pieceimages__1 {
+        animation-delay: 1s;
+        bottom: 200px;
+        left: 800px;
+        animation: rotate-anime1 2s linear infinite;
+    }
+
+    .pieceimages__2 {
+        animation-delay: 2s;
+        bottom: 270px;
+        left: 700px;
+    }
+
+    .pieceimages__3 {
+        bottom: 80px;
+        left: 850px;
+    }
+
+    .pieceimages__4 {
+        bottom: 350px;
+        left: 850px;
+        animation: rotate-anime1 6s linear infinite;
+    }
+
+    .pieceimages__5 {
+        bottom: 230px;
+        left: 1000px;
+    }
+
+    .pieceimages__6 {
+        bottom: 100px;
+        left: 1000px;
+        animation: rotate-anime1 5s linear infinite;
+    }
+
+    @keyframes rotate-anime {
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotate-anime1 {
+        0% {
+            transform: rotate(360deg);
+        }
+
+        100% {
+            transform: rotate(0);
+        }
+    }@media screen and (min-width: 1240px) {
+        #workflow {
+            background-image: url(../img/workflow.png);
+            margin: 0px;
+            background-size: cover;
+            background-position: center;
+            padding-top: 20px;
+            padding-bottom:40px;
+            height:870px;
+        }
+
+        .workflow__pc__wraaper {
+            display: flex;
+            align-items: center;
+            margin:0;
+        }
+
+        .workflow__pc {
+            width: 1000px;
+            margin-top: 100px;
+            display: block;
+            margin: 0 auto;
+            position:relative;
+        }
+
+        #profile {
+            padding-top: 20px;
+        }
+
+        #strength {
+            padding-top: 20px;
+        }
+
+        #works {
+            padding-top: 20px;
+        }
+
+        .common__section {
+            margin: 0;
+        }
+
+        #workflow img {
+            display: none;
+        }
+
+        #workflow .tab button {
+            display: none;
+        }
+
+        .tab {
+            display: none;
+        }
+
+        .commonb__body.tabcontent {
+            display: none;
+        }
+        .workflow__pc__left{
+            position:absolute;
+            text-align:center;
+        }
+        
+        .workflow__pc__right{
+            position:absolute;
+            right:0;
+            text-align:center;
+        }
+        .workflow__pc__bottom{
+            position:absolute;
+            top:400px;
+            text-align:center;
+            left:100px;
+        }
+        .workflow__pc__left div,.workflow__pc__right div{
+            width:400px;
+            height:60px;
+            background-color:white;
+            border-radius:20px;
+            padding:10px;
+        }
+        .workflow__pc__bottom div{
+            width:800px;
+            background-color:white;
+            border-radius:20px;
+            height:60px;
+            padding:0 10px;
+        }
+        .workflow__pc__left div p,.workflow__pc__right div p{
+            font-size:12px;
+            font-weight:600;
+        }
+        
+        .workflow__pc__left div h5,.workflow__pc__right div h5{
+            color:#C0D3FB;
+        }
+        .workflow__pc__bottom div p{
+            font-size:12px;
+            font-weight:600;
+        }
+        
+        .workflow__pc__bottom div h5{
+            color:#C0D3FB;
+        }
+        #hh{
+            padding:10px;
+        }
+        .workflow__pc__left .xx{
+            padding:10px;
+        }
+    }
