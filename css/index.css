@@ -1,11 +1,17 @@
 @charset "utf-8";
+
+/*ヘッダー*/
 header {
     text-align: center;
     display: relative;
     width: 100%;
-}.eng {
+}
+
+.eng {
     font-family: 'Pinyon Script', cursive;
-}.parallax {
+}
+
+.parallax {
     background-image: url('../img/firstview.jpg');
     width: 100%;
     height: 100vh;
@@ -13,9 +19,13 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}@media only screen and (max-device-width: 1366px) {
+}
+
+@media only screen and (max-device-width: 1366px) {
     .parallax {
-        background-attachment: scroll;   }}
+        background-attachment: scroll;
+    }
+}
 
 
 .title1 {
@@ -117,6 +127,10 @@ li {
     border: 1px solid aliceblue;
     color: white;
 }
+
+/*/ヘッダー*/
+
+/*ヘッダー以外の共通点*/
 .common__section {
     margin: 80px auto 40px;
     position: relative;
@@ -171,6 +185,10 @@ li {
     width: 100%;
     height: 200px;
 }
+
+/*/ヘッダー以外の共通点*/
+
+/*プロフィール*/
 [class^="profile__img"] {
     width: 100px;
     height: 100px;
@@ -215,7 +233,12 @@ li {
 
 .profile__img2 {
     margin-left: 0px;
-}[class^="strength__round"] {
+}
+
+/*/プロフィール*/
+
+/*Strength強み*/
+[class^="strength__round"] {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -253,7 +276,12 @@ li {
     position: absolute;
     line-height: 26px;
     margin-left: 10px;
-}.workflow__pc {
+}
+
+/*/Strength強み　*/
+
+/*workflow*/
+.workflow__pc {
     display: none;
 }
 
@@ -304,11 +332,20 @@ li {
     padding-top: 7px;
     margin-right: 20px;
 }
+
+/* Change background color of buttons on hover */
 .tablinks:hover {
     background-color: #9597FF;
-}.tablinks.active {
+}
+
+/* Create an active/current "tab button" class */
+.tablinks.active {
     background-color: #9597FF;
-}#skill {
+}
+
+/*/workflow*/
+/*スキル*/
+#skill {
     padding-top: 20px;
     background-image: url(../img/skill_sp.jpg);
     background-size: cover;
@@ -366,7 +403,11 @@ li {
 [class^="pieceimages_"],
 [class*=" pieceimages_"] {
     display: none;
-}footer {
+}
+
+/*/スキル*/
+/*フッター*/
+footer {
     height: 100vh;
     position: relative;
 }
@@ -399,7 +440,13 @@ li {
 .fas {
     font-size: 30px;
     margin: 0 5px
-}.slideUp {
+}
+
+/*/フッター*/
+
+
+/*アニメーション*/
+.slideUp {
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
     animation-duration: 1s;
@@ -431,7 +478,13 @@ li {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
-}@media screen and (min-width: 730px) {
+}
+
+/*/アニメーション*/
+
+/*レスポンシブ化*/
+/*profile*/
+@media screen and (min-width: 730px) {
     .profile__label {
         width: 200px;
     }
@@ -460,8 +513,16 @@ li {
         right: 100px;
         top: 30px;
         width: 250px;
-        height: 250px;}
-}@media screen and (min-width: 545px) {
+        height: 250px;
+    }
+}
+
+
+/*/profile*/
+
+
+/*strength*/
+@media screen and (min-width: 545px) {
     .point__text__4 {
         line-height: 52px;
     }
@@ -546,7 +607,13 @@ li {
     .point__text__1 {
         line-height: 52px;
     }
-}@media screen and (min-width: 1240px) {
+}
+
+/*/strength*/
+
+
+/*skill__pc*/
+@media screen and (min-width: 1240px) {
     #skill {
         background-image: url(../img/skill.jpg);
     }
@@ -633,7 +700,10 @@ li {
         100% {
             transform: rotate(0);
         }
-    }@media screen and (min-width: 1240px) {
+    }
+
+    /*workflow__pc*/
+    @media screen and (min-width: 1240px) {
         #workflow {
             background-image: url(../img/workflow.png);
             margin: 0px;
