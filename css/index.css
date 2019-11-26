@@ -657,14 +657,38 @@ footer {
             background-size: cover;
             background-position: center;
             padding-top: 20px;
-            padding-bottom:40px;
-            height:870px;
+            padding-bottom: 40px;
+            height: 900px;
+            position: relative;
+            z-index: -2;
+        }
+
+        .workflow__pc::after,
+        .workflow__pc::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 20px;
+            height: 400px;
+            background-color: white;
+            top: 40px;
+            z-index: -1;
+        }
+
+        .workflow__pc::after {
+            left: 190px;
+            background-color: #C7C0FB;
+        }
+
+        .workflow__pc::before {
+            right: 190px;
+            background-color: #C0D3FB;
         }
 
         .workflow__pc__wraaper {
             display: flex;
             align-items: center;
-            margin:0;
+            margin: 0;
         }
 
         .workflow__pc {
@@ -672,7 +696,7 @@ footer {
             margin-top: 100px;
             display: block;
             margin: 0 auto;
-            position:relative;
+            position: relative;
         }
 
         #profile {
@@ -706,56 +730,149 @@ footer {
         .commonb__body.tabcontent {
             display: none;
         }
-        .workflow__pc__left{
-            position:absolute;
-            text-align:center;
+
+        .workflow__pc__left {
+            position: absolute;
+            text-align: center;
+        }
+
+        .workflow__pc__right {
+            position: absolute;
+            right: 0;
+            text-align: center;
+        }
+
+        .workflow__pc__bottom {
+            position: absolute;
+            top: 400px;
+            text-align: center;
+            left: 100px;
+        }
+
+        .workflow__pc__left div,
+        .workflow__pc__right div {
+            width: 400px;
+            height: 66px;
+            background-color: white;
+            border-radius: 50px;
+            padding: 10px;
+        }
+
+        .workflow__pc__right div {
+            border: 3px solid #C0D3FB;
+        }
+
+        .workflow__pc__left div {
+            border: 3px solid #C7C0FB;
+        }
+
+        .workflow__pc__bottom {
+            margin-top: 30px;
+        }
+
+        .workflow__pc__bottom div {
+            width: 800px;
+            background-color: white;
+            border-radius: 50px;
+            height: 66px;
+            padding: 0 10px;
+        }
+
+        .workflow__pc__left div p,
+        .workflow__pc__right div p {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .workflow__pc__left div h5,
+        .workflow__pc__right div h5 {
+            color: #C0D3FB;
+        }
+
+        .workflow__pc__bottom div p {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .workflow__pc__bottom div h5 {
+            color: #C0D3FB;
+        }
+
+        #hh {
+            padding: 10px;
+        }
+
+        .workflow__pc__left .xx {
+            padding: 10px;
+        }
+
+        .keiyaku__h5 {
+            position: relative;
+            top: -8px;
+        }
+
+        .keiyaku__p {
+            position: relative;
+            top: -8px;
+        }
+
+        .workflow__pc__left h3,
+        .workflow__pc__right h3 {
+            background-color: #C7C0FB;
+            border-radius: 30px;
+            padding: 5px 30px;
+            width: 340px;
+            margin: 0 auto;
+            color: white
+        }
+
+        .workflow__pc__right h3 {
+            background-color: #C0D3FB;
+        }
+
+        .area {
+            width: 300px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        #area2 {
+            border: 3px solid #0000ff;
+            position: relative;
+        }
+
+
+        .workflow__pc__bottom div:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            content: attr(data-text);
+            color: #5ca048;
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: #383886;
+            z-index: 30;
+            height: 0px;
+        }
+
+        .workflow__pc__bottom div {
+            border: 3px solid #C7C0FB;
+            position: relative;
         }
         
-        .workflow__pc__right{
-            position:absolute;
-            right:0;
-            text-align:center;
+        .workflow__pc__bottom div::after{
+            content: "";
+            height: 60px;
+            position: absolute;
+            right: -3px;
+            bottom: -3px;
+            width: calc(50% + 3px);
+            border: 3px solid #C0D3FB;
+            background-color: rgba(255, 255, 255, 0);
+            border-left: none;
+            border-bottom-right-radius:50px;
+            border-top-right-radius: 50px;
         }
-        .workflow__pc__bottom{
-            position:absolute;
-            top:400px;
-            text-align:center;
-            left:100px;
-        }
-        .workflow__pc__left div,.workflow__pc__right div{
-            width:400px;
-            height:60px;
-            background-color:white;
-            border-radius:20px;
-            padding:10px;
-        }
-        .workflow__pc__bottom div{
-            width:800px;
-            background-color:white;
-            border-radius:20px;
-            height:60px;
-            padding:0 10px;
-        }
-        .workflow__pc__left div p,.workflow__pc__right div p{
-            font-size:12px;
-            font-weight:600;
-        }
-        
-        .workflow__pc__left div h5,.workflow__pc__right div h5{
-            color:#C0D3FB;
-        }
-        .workflow__pc__bottom div p{
-            font-size:12px;
-            font-weight:600;
-        }
-        
-        .workflow__pc__bottom div h5{
-            color:#C0D3FB;
-        }
-        #hh{
-            padding:10px;
-        }
-        .workflow__pc__left .xx{
-            padding:10px;
-        }
+
     }
