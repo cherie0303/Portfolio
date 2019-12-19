@@ -377,6 +377,32 @@ li {
 [class*=" pieceimages_"] {
     display: none;
 }
+.works{
+ 
+    margin:0 auto;
+}
+.works__item img{
+    margin:0 auto;
+    width:100%;
+}
+.works__item p{
+    color:#9597FF;
+}
+
+.works__small {
+	font-size:14px;
+}
+
+@media screen and (min-width: 768px) {
+    .works__item img{
+        width:400px;
+        
+    }
+    .sp__br{
+        display:none;
+    }
+}
+
 footer {
     height: 100vh;
     position: relative;
